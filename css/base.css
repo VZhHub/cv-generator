@@ -1,0 +1,23 @@
+html {
+	font-size: 16px;
+	font-family: Verdana, Tahoma, "Segoe UI", sans-serif;
+}
+main {
+	background-color: #ededed;
+}
+a {
+	text-decoration-line: none;
+}
+a:hover {
+	text-decoration-line: underline;
+}
+.page-header {
+	background-color: #2dafc4;
+}
+.page-footer {
+	background-color: #121321;
+}
+.page-footer * {
+	color: #fff;
+	font-style: normal;
+}
