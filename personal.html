@@ -15,7 +15,12 @@
 		
 		<title>CVGen - Personal</title>
 		
-		<link rel="stylesheet" type="text/css" href="./css/main.css">
+		<!--<link rel="stylesheet" type="text/css" href="./css/main.css">-->
+		<link rel="stylesheet" type="text/css" href="./css/reset.css">
+		<link rel="stylesheet" type="text/css" href="./css/base.css">
+		<link rel="stylesheet" type="text/css" href="./css/layout.css">
+		<link rel="stylesheet" type="text/css" href="./css/utils.css">
+		<link rel="stylesheet" type="text/css" href="./css/components/photo-button.css">
 	</head>
 	<body>
 		<header class="page-header">
@@ -29,17 +34,17 @@
 		<main class="page-main">
 			<header class="main-header">
 				<h1>Personal details</h1>
+				<p><em>Only fields marked with asterisks are required.</em></p>
 			</header>
 			<form action="" enctype="multipart/form-data">
 				<fieldset>
 					<legend>Main details</legend>
-					<p>Fields marked with asterisks are required.</p>
 					<div class="input-group input-group--photo">
+						<input id="addphoto" class="visually-hidden" type="file" accept="image/png, image/jpeg">
 						<label for="addphoto">
-							<img src="./assets/images/photo.svg" width="90" height="90" alt="">
+							<img src="./assets/images/photo.svg" width="80" height="80" alt="">
 							<span>Add photo (optional)</span>
 						</label>
-						<input id="addphoto" type="file" accept="image/png, image/jpeg">
 					</div>
 					<div class="input-group">
 						<label for="fname">First name*</label><br>
@@ -54,8 +59,8 @@
 						<input id="email" name="email" type="email" placeholder="e.g. contact@email.com" required>
 					</div>
 					<div class="input-group">
-						<label for="tel">Phone number*</label><br>
-						<input id="tel" name="tel" type="tel" required>
+						<label for="tel">Phone number</label><br>
+						<input id="tel" name="tel" type="tel">
 					</div>
 					<div class="input-group">
 						<label for="position">Target position*</label><br>
@@ -68,31 +73,47 @@
 				</fieldset>
 				<fieldset>
 					<legend>Address</legend>
-					<p>Fill this part only if needed.</p>
-					<label for="state">State</label>
-					<input id="state" name="state" type="text">
-					<label for="city">City</label>
-					<input id="city" name="city" type="text">
-					<label for="street">Street</label>
-					<input id="street" name="street" type="text">
-					<label for="streetnum">Street number</label>
-					<input id="streetnum" name="streetnum" type="text">
-					<label for="zip">Zip code</label>
-					<input id="zip" name="zip" type="text">
+					<div class="input-group">
+						<label for="state">State</label><br>
+						<input id="state" name="state" type="text">
+					</div>
+					<div class="input-group">
+						<label for="city">City</label><br>
+						<input id="city" name="city" type="text">
+					</div>
+					<div class="input-group">
+						<label for="street">Street</label><br>
+						<input id="street" name="street" type="text">
+					</div>
+					<div class="input-group">
+						<label for="streetnum">Street number</label><br>
+						<input id="streetnum" name="streetnum" type="text">
+					</div>
+					<div class="input-group">
+						<label for="zip">Zip code</label><br>
+						<input id="zip" name="zip" type="text">
+					</div>
 				</fieldset>
 				<fieldset>
 					<legend>Additional details</legend>
-					<p>Fill this part only if needed.</p>
-					<label for="driving">Driving license</label>
-					<input id="driving" name="driving" type="text">
-					<label for="linkedin">LinkedIn</label>
-					<input id="linkedin" name="linkedin" type="url">
-					<label for="website">Website</label>
-					<input id="website" name="website" type="url">
-					<input id="relocation" name="relocation" value="yes" type="checkbox">
-					<label for="relocation">Open to relocation</label>
+					<div class="input-group">
+						<label for="driving">Driving license</label><br>
+						<input id="driving" name="driving" type="text">
+					</div>
+					<div class="input-group">
+						<label for="linkedin">LinkedIn</label><br>
+						<input id="linkedin" name="linkedin" type="url">
+					</div>
+					<div class="input-group">
+						<label for="website">Website</label><br>
+						<input id="website" name="website" type="url">
+					</div>
+					<div class="input-group">
+						<label for="relocation">Open to relocation</label>
+						<input id="relocation" name="relocation" value="yes" type="checkbox">
+					</div>
 				</fieldset>
-				<input type="submit" value="Next Step">
+				<button type="button">Next Step</button>
 			</form>
 		</main>
 		<footer class="page-footer">

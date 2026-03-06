@@ -6,3 +6,10 @@
 ol, ul {
 	list-style-type: none;
 }
+fieldset {
+	border: none;
+}
+img {
+	display: block;
+	max-width: 100%;
+}

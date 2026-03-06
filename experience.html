@@ -15,7 +15,11 @@
 		
 		<title>CVGen - Experience</title>
 		
-		<link rel="stylesheet" type="text/css" href="./css/main.css">
+		<!--<link rel="stylesheet" type="text/css" href="./css/main.css">-->
+		<link rel="stylesheet" type="text/css" href="./css/reset.css">
+		<link rel="stylesheet" type="text/css" href="./css/base.css">
+		<link rel="stylesheet" type="text/css" href="./css/layout.css">
+		<link rel="stylesheet" type="text/css" href="./css/utils.css">
 	</head>
 	<body>
 		<header class="page-header">
@@ -29,81 +33,107 @@
 		<main class="page-main">
 			<header class="main-header">
 				<h1>My experiences</h1>
+				<p><em>This section is optional but highly recommended.</em></p>
 			</header>
-			<button type="button" class="accordion">Education</button>
 			<form action="">
 				<fieldset>
 					<legend>Education</legend>
-					<label for="school">School</label>
-					<input id="school" name="school" type="text">
-					<label for="degree">Degree</label>
-					<input id="degree" name="degree" type="text">
-					<label for="studystart">Start date</label>
-					<input id="studystart" name="studystart" type="date">
-					<label for="studyend">End date</label>
-					<input id="studyend" name="studyend" type="date">
-					<textarea></textarea>
+					<div class="input-group">
+						<label for="school">School</label><br>
+						<input id="school" name="school" type="text">
+					</div>
+					<div class="input-group">
+						<label for="degree">Degree</label><br>
+						<input id="degree" name="degree" type="text">
+					</div>
+					<div class="input-group">
+						<label for="studystart">Start date</label><br>
+						<input id="studystart" name="studystart" type="date">
+					</div>
+					<div class="input-group">
+						<label for="studyend">End date</label><br>
+						<input id="studyend" name="studyend" type="date">
+					</div>
+					<div class="input-group">
+						<label for="edudescr">Description</label><br>
+						<textarea id="edudescr" name="edudescr"></textarea>
+					</div>
 				</fieldset>
-			</form>
-			<button type="button" class="accordion">Skills</button>
-			<form action="">
 				<fieldset>
 					<legend>Skills</legend>
-					<label for="skill">Skill</label>
-					<input id="skill" name="skill" type="text">
-					<label for="skilllevel">Level</label>
-					<select id="skilllevel" name="skilllevel">
-						<option value="" selected>--</option>
-						<option value="master">Master</option>
-						<option value="expert">Expert</option>
-						<option value="advanced">Advanced</option>
-						<option value="intermediate">Intermediate</option>
-						<option value="beginner">Beginner</option>
-					</select>
+					<div class="input-group">
+						<label for="skill">Skill</label><br>
+						<input id="skill" name="skill" type="text">
+					</div>
+					<div class="input-group">
+						<label for="skilllevel">Level</label><br>
+						<select id="skilllevel" name="skilllevel">
+							<option value="" selected>--</option>
+							<option value="master">Master</option>
+							<option value="expert">Expert</option>
+							<option value="advanced">Advanced</option>
+							<option value="intermediate">Intermediate</option>
+							<option value="beginner">Beginner</option>
+						</select>
+					</div>
 				</fieldset>
-			</form>
-			<button type="button" class="accordion">Work experience</button>
-			<form action="">
 				<fieldset>
-					<legend>Work</legend>
-					<label for="job">Job Title</label>
-					<input id="job" name="job" type="text">
-					<label for="employer">Employer</label>
-					<input id="employer" name="employer" type="text">
-					<label for="jobstart">Start date</label>
-					<input id="jobstart" name="jobstart" type="date">
-					<label for="jobend">End date</label>
-					<input id="jobend" name="jobend" type="date">
-					<textarea></textarea>
+					<legend>Work experience</legend>
+					<div class="input-group">
+						<label for="job">Job Title</label><br>
+						<input id="job" name="job" type="text">
+					</div>
+					<div class="input-group">
+						<label for="employer">Employer</label><br>
+						<input id="employer" name="employer" type="text">
+					</div>
+					<div class="input-group">
+						<label for="jobstart">Start date</label><br>
+						<input id="jobstart" name="jobstart" type="date">
+					</div>
+					<div class="input-group">
+						<label for="jobend">End date</label><br>
+						<input id="jobend" name="jobend" type="date">
+					</div>
+					<div class="input-group">
+						<label for="jobdescr">Description</label><br>
+						<textarea id="jobdescr" name="jobdescr"></textarea>
+					</div>
 				</fieldset>
-			</form>
-			<button type="button" class="accordion">Resume objective</button>
-			<form action="">
 				<fieldset>
-					<legend>Description</legend>
-					<textarea></textarea>
+					<legend>Resume objective</legend>
+					<div class="input-group">
+						<label for="resumedescr">Description</label><br>
+						<textarea id="resumedescr" name="resumedescr"></textarea>
+					</div>
 				</fieldset>
-			</form>
-			<button type="button" class="accordion">Interests</button>
-			<form action="">
 				<fieldset>
-					<legend>Hobby</legend>
-					<textarea></textarea>
+					<legend>Interests</legend>
+					<div class="input-group">
+						<label for="hobbydescr">Description</label><br>
+						<textarea id="hobbydescr" name="hobbydescr"></textarea>
+					</div>
 				</fieldset>
-			</form>
-			<button type="button" class="accordion">References</button>
-			<form action="">
 				<fieldset>
-					<legend>Reference</legend>
-					<label for="companyname">Company Name</label>
-					<input id="companyname" name="companyname" type="text">
-					<label for="contactperson">Contact Person</label>
-					<input id="contactperson" name="contactperson" type="text">
-					<label for="contacttel">Phone Number</label>
-					<input id="contacttel" name="contacttel" type="tel">
-					<label for="contactemail">Contact Email</label>
-					<input id="contactemail" name="contactemail" type="email">
+					<legend>References</legend>
+					<div class="input-group">
+						<label for="companyname">Company Name</label><br>
+						<input id="companyname" name="companyname" type="text">
+					</div>
+					<div class="input-group">
+						<label for="contactperson">Contact Person</label><br>
+						<input id="contactperson" name="contactperson" type="text">
+					</div>
+					<div class="input-group">
+						<label for="contacttel">Phone Number</label><br>
+						<input id="contacttel" name="contacttel" type="tel">
+					</div>
+					<div class="input-group">
+						<label for="contactemail">Contact Email</label><br>
+						<input id="contactemail" name="contactemail" type="email">
+					</div>
 				</fieldset>
+				<button type="button">Next Step</button>
 			</form>
 		</main>
 		<footer class="page-footer">

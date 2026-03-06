@@ -2,7 +2,7 @@ html {
 	font-size: 16px;
 	font-family: Verdana, Tahoma, "Segoe UI", sans-serif;
 }
-main {
+.page-main {
 	background-color: #ededed;
 }
 a {
@@ -20,4 +20,16 @@ a:hover {
 .page-footer * {
 	color: #fff;
 	font-style: normal;
+}
+input:not([type="date"]):not([type="checkbox"]) {
+	width: 100%;
+}
+fieldset {
+	border-top: 2px solid gray;
+	margin-bottom: 30px;
+	padding-top: 15px;
+}
+form {
+	background-color: lightblue;
+	padding: 25px 10px;
 }
