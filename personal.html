@@ -21,20 +21,25 @@
 		<link rel="stylesheet" type="text/css" href="./css/layout.css">
 		<link rel="stylesheet" type="text/css" href="./css/utils.css">
 		<link rel="stylesheet" type="text/css" href="./css/components/photo-button.css">
+		<link rel="stylesheet" type="text/css" href="./css/components/process-button.css">
+		<link rel="stylesheet" type="text/css" href="./css/components/page-backdrop.css">
 	</head>
 	<body>
+		<div class="page-backgrop"></div>
 		<header class="page-header">
 			<a href="./index.html"><img src="./assets/images/logo.svg" width="90" height="25" alt="CVgenerator"></a>
 			<nav>
 				<ul>
-					<li><a href="#">Contact</a></li>
+					<li><a href="#my-contact">Contact</a></li>
 				</ul>
 			</nav>
 		</header>
 		<main class="page-main">
 			<header class="main-header">
-				<h1>Personal details</h1>
-				<p><em>Only fields marked with asterisks are required.</em></p>
+				<hgroup class="main-header__hgroup">
+					<h1>Personal details</h1>
+					<p><em>Only fields marked with asterisks are required.</em></p>
+				</hgroup>
 			</header>
 			<form action="" enctype="multipart/form-data">
 				<fieldset>
@@ -42,7 +47,7 @@
 					<div class="input-group input-group--photo">
 						<input id="addphoto" class="visually-hidden" type="file" accept="image/png, image/jpeg">
 						<label for="addphoto">
-							<img src="./assets/images/photo.svg" width="80" height="80" alt="">
+							<img src="./assets/images/photo.svg" width="50" height="50" alt="">
 							<span>Add photo (optional)</span>
 						</label>
 					</div>
@@ -59,12 +64,12 @@
 						<input id="email" name="email" type="email" placeholder="e.g. contact@email.com" required>
 					</div>
 					<div class="input-group">
-						<label for="tel">Phone number</label><br>
-						<input id="tel" name="tel" type="tel">
-					</div>
-					<div class="input-group">
 						<label for="position">Target position*</label><br>
 						<input id="position" name="position" type="text" required>
+					</div>
+					<div class="input-group">
+						<label for="tel">Phone number</label><br>
+						<input id="tel" name="tel" type="tel">
 					</div>
 					<div class="input-group">
 						<label for="birthdate">Date of birth</label><br>
@@ -113,10 +118,10 @@
 						<input id="relocation" name="relocation" value="yes" type="checkbox">
 					</div>
 				</fieldset>
-				<button type="button">Next Step</button>
+				<button class="process-button" type="button">Next Step</button>
 			</form>
 		</main>
-		<footer class="page-footer">
+		<footer id="my-contact" class="page-footer">
 			<ul>
 				<li><a href="https://github.com/VZhHub/cv-generator.git" target="_blank" rel="noopener">GitHub Project</a></li>
 			</ul>

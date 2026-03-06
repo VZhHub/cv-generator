@@ -20,13 +20,17 @@
 		<link rel="stylesheet" type="text/css" href="./css/base.css">
 		<link rel="stylesheet" type="text/css" href="./css/layout.css">
 		<link rel="stylesheet" type="text/css" href="./css/utils.css">
+		<link rel="stylesheet" type="text/css" href="./css/components/process-button.css">
+		<link rel="stylesheet" type="text/css" href="./css/components/cards.css">
+		<link rel="stylesheet" type="text/css" href="./css/components/page-backdrop.css">
 	</head>
 	<body>
+		<div class="page-backgrop"></div>
 		<header class="page-header">
 			<a href="./index.html"><img src="./assets/images/logo.svg" width="90" height="25" alt="CVgenerator"></a>
 			<nav>
 				<ul>
-					<li><a href="#">Contact</a></li>
+					<li><a href="#my-contact">Contact</a></li>
 				</ul>
 			</nav>
 		</header>
@@ -37,14 +41,21 @@
 					<p>Create your very own Curriculum Vitae and download it in pdf.</p>
 				</hgroup>
 				<ul class="main-header__ul">
-					<li><a href="#">Create your CV</a></li>
+					<li><a class="process-button" href="./personal.html">Create your CV</a></li>
 				</ul>
 			</header>
 			<section class="card">
 				<img src="./assets/images/fast.svg" width="50" height="50" alt="">
 				<div>
 					<h2>Quick and easy CV generator</h2>
-					<p>With CV Generator, creating a professional CV is simple and fast. Just enter your personal details, fill in your information, and download your completed resume.</p>
+					<p>With CV generator, creating a professional CV is simple and fast. Just enter your personal details, fill in your experience, and download your completed resume.</p>
+				</div>
+			</section>
+			<section class="card">
+				<img src="./assets/images/preview.svg" width="50" height="50" alt="">
+				<div>
+					<h2>Preview</h2>
+					<p>There’s also an option to preview the document before downloading, so you can fix any parts you’re not happy with!</p>
 				</div>
 			</section>
 			<section class="card">
@@ -55,7 +66,7 @@
 				</div>
 			</section>
 		</main>
-		<footer class="page-footer">
+		<footer id="my-contact" class="page-footer">
 			<ul>
 				<li><a href="https://github.com/VZhHub/cv-generator.git" target="_blank" rel="noopener">GitHub Project</a></li>
 			</ul>

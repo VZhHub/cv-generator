@@ -20,20 +20,25 @@
 		<link rel="stylesheet" type="text/css" href="./css/base.css">
 		<link rel="stylesheet" type="text/css" href="./css/layout.css">
 		<link rel="stylesheet" type="text/css" href="./css/utils.css">
+		<link rel="stylesheet" type="text/css" href="./css/components/process-button.css">
+		<link rel="stylesheet" type="text/css" href="./css/components/page-backdrop.css">
 	</head>
 	<body>
+		<div class="page-backgrop"></div>
 		<header class="page-header">
 			<a href="./index.html"><img src="./assets/images/logo.svg" width="90" height="25" alt="CVgenerator"></a>
 			<nav>
 				<ul>
-					<li><a href="#">Contact</a></li>
+					<li><a href="#my-contact">Contact</a></li>
 				</ul>
 			</nav>
 		</header>
 		<main class="page-main">
 			<header class="main-header">
-				<h1>My experiences</h1>
-				<p><em>This section is optional but highly recommended.</em></p>
+				<hgroup class="main-header__hgroup">
+					<h1>My experiences</h1>
+					<p><em>This section is optional but highly recommended.</em></p>
+				</hgroup>
 			</header>
 			<form action="">
 				<fieldset>
@@ -133,10 +138,11 @@
 						<input id="contactemail" name="contactemail" type="email">
 					</div>
 				</fieldset>
-				<button type="button">Next Step</button>
+				<button class="process-button" type="button">Previous Step</button>
+				<button class="process-button" type="button">Next Step</button>
 			</form>
 		</main>
-		<footer class="page-footer">
+		<footer id="my-contact" class="page-footer">
 			<ul>
 				<li><a href="https://github.com/VZhHub/cv-generator.git" target="_blank" rel="noopener">GitHub Project</a></li>
 			</ul>

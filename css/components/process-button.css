@@ -1,0 +1,21 @@
+.process-button {
+	display: inline-block;
+	position: relative;
+	padding: 15px;
+	border: none;
+	border-radius: 4px;
+	background-color: #714AE4;
+	box-shadow: 3px 3px 5px rgba(0, 0, 0, .8);
+	color: #fff;
+	font-weight: bold;
+	font-size: 1rem;
+	transition: background-color .2s;
+}
+.process-button:hover {
+	cursor: pointer;
+	background-color: #4114C9;
+}
+.process-button:active {
+	transform: translate(3px, 3px);
+	box-shadow: 1px 1px 5px rgba(0, 0, 0, .7);
+}
