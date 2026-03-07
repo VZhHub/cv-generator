@@ -8,41 +8,28 @@
 	display: grid;
 	grid-template-columns: minmax(340px, 900px);
 	justify-content: center;
+	background-color: #ededed;
 }
 .page-footer {
+	background-image: linear-gradient(#2dafc4, #121321 80%);
+	padding: 15px 0;
 	text-align: center;
+}
+.page-footer * {
+	color: #fff;
+	font-style: normal;
+}
+.page-footer > *:not(:last-child) {
+	margin-bottom: 10px;
 }
 .main-header, .main-header__hgroup, .main-header__ul {
 	text-align: center;
 	z-index: 1;
 }
 .main-header {
+	color: #fff;
 	margin: 40px 0;
 }
 .main-header a {
 	margin-top: 30px;
-}
-.card {
-	display: flex;
-	align-items: center;
-	column-gap: 20px;
-}
-form {
-	z-index: 0;
-}
-fieldset {
-	position: relative;
-	display: grid;
-	grid-template-columns: 1fr 1fr;
-	gap: 15px;
-}
-.input-group--photo {
-	grid-column: 2;
-	grid-row: 1/3;
-	justify-self: end;
-}
-legend {
-	position: absolute;
-	bottom: 100%;
-	margin-bottom: 5px;
 }

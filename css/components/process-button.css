@@ -11,9 +11,11 @@
 	font-size: 1rem;
 	transition: background-color .2s;
 }
-.process-button:hover {
-	cursor: pointer;
-	background-color: #4114C9;
+@media (hover: hover) {
+	.process-button:hover {
+		cursor: pointer;
+		background-color: #4114C9;
+	}
 }
 .process-button:active {
 	transform: translate(3px, 3px);
