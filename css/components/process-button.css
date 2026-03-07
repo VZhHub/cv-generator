@@ -14,7 +14,7 @@
 @media (hover: hover) {
 	.process-button:hover {
 		cursor: pointer;
-		background-color: #4114C9;
+		background-color: #4114c9;
 	}
 }
 .process-button:active {

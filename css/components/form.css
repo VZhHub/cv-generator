@@ -1,16 +1,16 @@
 form {
-	position: relative;
-	display: grid;
-	grid-template-columns: 1fr 1fr;
-	gap: 15px;
-	background-color: lightblue;
 	padding: 25px 10px;
+	background-color: lightblue;
 	z-index: 0;
 }
 fieldset {
-	border-top: 2px solid gray;
+	display: grid;
+	position: relative;
+	grid-template-columns: 1fr 1fr;
+	gap: 15px;
 	margin-bottom: 30px;
 	padding-top: 15px;
+	border-top: 2px solid gray;
 }
 legend {
 	position: absolute;
@@ -19,4 +19,8 @@ legend {
 }
 input:not([type="date"]):not([type="checkbox"]) {
 	width: 100%;
+}
+.input-group--target-position {
+	grid-column: 1;
+	grid-row: 4;
 }

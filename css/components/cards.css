@@ -1,17 +1,40 @@
 .card {
 	display: flex;
+	flex-direction: column;
 	align-items: center;
-	column-gap: 20px;
-	background-color:  #fff;
-	padding: 50px;
-	margin-bottom: 30px;
+	row-gap: 5px;
+	padding: 15px;
+	margin: 0 15px 30px;
+	background-color: #fff;
 	border-radius: 10px;
 	box-shadow: 10px 10px 10px rgba(0, 0, 0, .4);
+	text-align: center;
 	z-index: 1;
 }
 .card h2 {
-	margin-bottom: 15px;
+	font-size: 1.2rem;
+	margin-bottom: 5px;
 }
 .card:last-of-type {
 	margin-bottom: 80px;
+}
+@media (min-width: 768px) {
+	.card {
+		flex-direction: row;
+		column-gap: 20px;
+		padding: 30px;
+		text-align: start;
+	}
+	.card h2 {
+		font-size: revert;
+		margin-bottom: 10px;
+	}
+}
+@media (min-width: 1024px) {
+	.card {
+		padding: 50px;
+	}
+	.card h2 {
+		margin-bottom: 15px;
+	}
 }
