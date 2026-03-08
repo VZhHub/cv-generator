@@ -2,6 +2,7 @@
 	grid-column: 2;
 	grid-row: 1/3;
 	justify-self: end;
+	align-self: end;
 	height: 130px;
 	width: 130px;
 	border: 4px dotted #bbb;

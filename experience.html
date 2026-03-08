@@ -43,13 +43,13 @@
 				</hgroup>
 			</header>
 			<form action="">
-				<fieldset>
+				<fieldset class="fieldset fieldset--education">
 					<legend>Education</legend>
-					<div class="input-group">
+					<div class="input-group input-group--school">
 						<label for="school">School</label><br>
 						<input id="school" name="school" type="text">
 					</div>
-					<div class="input-group">
+					<div class="input-group input-group--degree">
 						<label for="degree">Degree</label><br>
 						<input id="degree" name="degree" type="text">
 					</div>
@@ -61,12 +61,12 @@
 						<label for="studyend">End date</label><br>
 						<input id="studyend" name="studyend" type="date">
 					</div>
-					<div class="input-group">
+					<div class="input-group input-group--description">
 						<label for="edudescr">Description</label><br>
 						<textarea id="edudescr" name="edudescr"></textarea>
 					</div>
 				</fieldset>
-				<fieldset>
+				<fieldset class="fieldset">
 					<legend>Skills</legend>
 					<div class="input-group">
 						<label for="skill">Skill</label><br>
@@ -84,13 +84,13 @@
 						</select>
 					</div>
 				</fieldset>
-				<fieldset>
+				<fieldset class="fieldset fieldset--work">
 					<legend>Work experience</legend>
-					<div class="input-group">
+					<div class="input-group input-group--job-title">
 						<label for="job">Job Title</label><br>
 						<input id="job" name="job" type="text">
 					</div>
-					<div class="input-group">
+					<div class="input-group input-group--employer">
 						<label for="employer">Employer</label><br>
 						<input id="employer" name="employer" type="text">
 					</div>
@@ -102,26 +102,26 @@
 						<label for="jobend">End date</label><br>
 						<input id="jobend" name="jobend" type="date">
 					</div>
-					<div class="input-group">
+					<div class="input-group input-group--description">
 						<label for="jobdescr">Description</label><br>
 						<textarea id="jobdescr" name="jobdescr"></textarea>
 					</div>
 				</fieldset>
-				<fieldset>
+				<fieldset class="fieldset">
 					<legend>Resume objective</legend>
-					<div class="input-group">
+					<div class="input-group input-group--description">
 						<label for="resumedescr">Description</label><br>
 						<textarea id="resumedescr" name="resumedescr"></textarea>
 					</div>
 				</fieldset>
-				<fieldset>
+				<fieldset class="fieldset">
 					<legend>Interests</legend>
-					<div class="input-group">
+					<div class="input-group input-group--description">
 						<label for="hobbydescr">Description</label><br>
 						<textarea id="hobbydescr" name="hobbydescr"></textarea>
 					</div>
 				</fieldset>
-				<fieldset>
+				<fieldset class="fieldset fieldset--references">
 					<legend>References</legend>
 					<div class="input-group">
 						<label for="companyname">Company Name</label><br>
@@ -140,8 +140,8 @@
 						<input id="contactemail" name="contactemail" type="email">
 					</div>
 				</fieldset>
-				<button class="process-button" type="button">Previous Step</button>
-				<button class="process-button" type="button">Next Step</button>
+				<button class="process-button process-button--previous" type="button">Prev Step</button>
+				<button class="process-button process-button--next" type="button">Next Step</button>
 			</form>
 		</main>
 		<footer id="my-contact" class="page-footer">

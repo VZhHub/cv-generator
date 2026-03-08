@@ -8,7 +8,6 @@
 	display: grid;
 	grid-template-columns: minmax(340px, 900px);
 	justify-content: center;
-	justify-items: center;
 	background-color: #ededed;
 }
 .page-footer {
@@ -23,11 +22,14 @@
 .page-footer > *:not(:last-child) {
 	margin-bottom: 10px;
 }
-.main-header, .main-header__hgroup, .main-header__ul {
+.main-header,
+.main-header__hgroup,
+.main-header__ul {
 	text-align: center;
 	z-index: 1;
 }
 .main-header {
+	justify-self: center;
 	padding: 0 10px;
 	margin: 40px 0;
 	max-width: 80vw;
