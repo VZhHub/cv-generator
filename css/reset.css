@@ -9,6 +9,6 @@ ol, ul {
 fieldset {
 	border: none;
 }
-img {
+img, svg {
 	display: block;
 }

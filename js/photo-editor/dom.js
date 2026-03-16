@@ -1,0 +1,15 @@
+export const dom = {
+	input: document.getElementById("add-photo"),
+	overlay: document.querySelector(".overlay"),
+	div: document.querySelector(".adjust-photo__div"),
+	img: document.querySelector(".adjust-photo__img"),
+	rotate: document.querySelector(".adjust-photo__rotate"),
+	closeBtn: document.querySelector(".adjust-photo__close"),
+	zoom: document.getElementById("zoom"),
+	save: document.querySelector(".adjust-photo__save"),
+	label: document.querySelector(".photo-label"),
+	defaultImg: document.querySelector(".photo-label__default-img"),
+	uploadedImg: document.querySelector(".photo-label__uploaded-img"),
+	photoBtnText: document.querySelector(".photo-label__text"),
+	deletePhoto: document.querySelector(".input-group__delete-photo"),
+};

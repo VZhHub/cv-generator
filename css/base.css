@@ -16,3 +16,6 @@ a {
 hgroup em {
 	font-style: normal;
 }
+button {
+	cursor: pointer;
+}
