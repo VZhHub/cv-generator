@@ -36,7 +36,7 @@ form {
 	}
 }
 .fieldset:not(:last-of-type) {
-	margin-bottom: 60px;
+	margin-bottom: 80px;
 }
 legend {
 	position: absolute;
