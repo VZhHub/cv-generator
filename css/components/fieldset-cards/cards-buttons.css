@@ -1,13 +1,3 @@
-.fieldset-card {
-	display: grid;
-	grid-column: 1/-1;
-	gap: 15px;
-}
-@media (min-width: 768px) {
-	.fieldset-card {
-		grid-template-columns: 1fr 1fr;
-	}
-}
 .add-card {
 	display: flex;
 	column-gap: 10px;
@@ -44,20 +34,29 @@
 	border-color: #1e6d7b;
 	background-color: #1e6d7b;
 }
-.delete-card {
+.delete-card,
+.edit-card {
 	display: flex;
 	justify-content: center;
+	justify-self: end;
 	align-items: center;
-	align-self: end;
 	height: 36px;
+	width: min-content;
 	padding: 0 5px;
-	border: 2px solid #ff5500;
 	border-radius: 4px;
 	background-color: transparent;
 	font-size: 1rem;
-	transition: background-color .2s, color .2s;
+	white-space: nowrap;
+	transition: border-color .2s, background-color .2s, color .2s;
 }
-.delete-card svg {
+.delete-card {
+	border: 2px solid #ff5500;
+}
+.edit-card {
+	border: 2px solid #34b22b;
+}
+.delete-card svg,
+.edit-card svg {
 	transition: fill .2s;
 }
 @media (hover: hover) {
@@ -65,7 +64,12 @@
 		background-color: #ff5500;
 		color: #fff;
 	}
-	.delete-card:hover svg {
+	.edit-card:hover {
+		background-color: #34b22b;
+		color: #fff;
+	}
+	.delete-card:hover svg,
+	.edit-card:hover svg {
 		fill: #fff;
 	}
 }
@@ -73,7 +77,10 @@
 	border-color: #cc4400;
 	background-color: #cc4400;
 }
-.delete-card-wrapper {
-	display: flex;
-	gap: 20px;
+.fieldset-card:nth-child(1):last-of-type .delete-card {
+	display: none;
+}
+.edit-card:active {
+	border-color: #288921;
+	background-color: #288921;
 }

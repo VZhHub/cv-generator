@@ -11,5 +11,11 @@
 	overflow: hidden;
 }
 .hidden {
-	display: none;
+	display: none !important;
+}
+.fade {
+	opacity: 0 !important;
+}
+.appear {
+	opacity: 1 !important;
 }
