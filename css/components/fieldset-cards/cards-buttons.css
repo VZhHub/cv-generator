@@ -35,7 +35,8 @@
 	background-color: #1e6d7b;
 }
 .delete-card,
-.edit-card {
+.edit-card,
+.save-card {
 	display: flex;
 	justify-content: center;
 	justify-self: end;
@@ -49,14 +50,22 @@
 	white-space: nowrap;
 	transition: border-color .2s, background-color .2s, color .2s;
 }
+.edit-card span,
+.save-card span {
+	margin-left: 4px;
+}
 .delete-card {
 	border: 2px solid #ff5500;
 }
 .edit-card {
 	border: 2px solid #34b22b;
 }
+.save-card {
+	border: 2px solid #407ff2;
+}
 .delete-card svg,
-.edit-card svg {
+.edit-card svg,
+.save-card svg {
 	transition: fill .2s;
 }
 @media (hover: hover) {
@@ -68,8 +77,13 @@
 		background-color: #34b22b;
 		color: #fff;
 	}
+	.save-card:hover {
+		background-color: #407ff2;
+		color: #fff;
+	}
 	.delete-card:hover svg,
-	.edit-card:hover svg {
+	.edit-card:hover svg,
+	.save-card:hover svg {
 		fill: #fff;
 	}
 }
@@ -80,7 +94,16 @@
 .fieldset-card:nth-child(1):last-of-type .delete-card {
 	display: none;
 }
+.fieldset-card--references:nth-child(1):last-of-type .save-card,
+.fieldset-card--education:nth-child(1):last-of-type .save-card,
+.fieldset-card--work:nth-child(1):last-of-type .save-card {
+	grid-column: 2;
+}
 .edit-card:active {
 	border-color: #288921;
 	background-color: #288921;
+}
+.save-card:active {
+	border-color: #0f58df;
+	background-color: #0f58df;
 }

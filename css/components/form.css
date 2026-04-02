@@ -45,7 +45,7 @@ input:not([type="checkbox"]),
 select {
 	padding: 5px;
 	margin-top: 5px;
-	max-width: 550px;
+	//max-width: 550px;
 	font-size: 1.1rem;
 }
 input:not([type="date"]):not([type="checkbox"]) {
@@ -70,8 +70,7 @@ input:not([type="date"]):not([type="checkbox"]) {
 .input-group--school,
 .input-group--degree,
 .input-group--job-title, 
-.input-group--employer,
-.fieldset--references > *:not(legend) {
+.input-group--employer {
 	grid-column: 1/-1;
 }
 @media (min-width: 768px) {
@@ -81,14 +80,12 @@ input:not([type="date"]):not([type="checkbox"]) {
 	.input-group--email,
 	.input-group--target-position,
 	.input-group--school,
-	.input-group--job-title,
-	.fieldset--references .input-group:nth-child(even) {
+	.input-group--job-title {
 		grid-column: 1;
 	}
 	.input-group--tel,
 	.input-group--degree,
-	.input-group--employer,
-	.fieldset--references .input-group:nth-child(odd) {
+	.input-group--employer {
 		grid-column: 2;
 	}
 	.input-group--relocation {

@@ -1,14 +1,10 @@
 .fieldset-cards-wrapper {
 	grid-column: 1/-1;
-	max-height: 300px;
-	overflow-y: auto;
 }
 .fieldset-card {
+	padding: 2px;
 	overflow: hidden;
 	transition: height .3s linear;
-}
-.fieldset-card--skill {
-	padding: 2px;
 }
 .fieldset-card-output {
 	display: grid;
@@ -19,25 +15,54 @@
 	opacity: 0;
 	transition: height .3s linear, opacity .3s linear;
 }
-.fieldset-card-enter-field {
+.fieldset-card-enter-field--skill {
 	display: grid;
-	grid-template-columns: 1fr 1fr;
-	row-gap: 15px;
+	grid-template-columns: 1fr 1fr 1fr;
+	row-gap: 5px;
 	column-gap: 10px;
 	transition: opacity .3s linear;
 }
-.fieldset-card-enter-field .delete-card {
+.fieldset-card-enter-field--reference {
+	display: grid;
+	grid-template-columns: 1fr min-content;
+	row-gap: 5px;
+	column-gap: 10px;
+	transition: opacity .3s linear;
+}
+.fieldset-card-enter-field--education,
+.fieldset-card-enter-field--work {
+	display: grid;
+	grid-template-columns: auto auto;
+	row-gap: 5px;
+	column-gap: 10px;
+	transition: opacity .3s linear;
+}
+.card-buttons-wrapper {
+	display: grid;
+	grid-template-columns: 1fr min-content;
+	column-gap: 10px;
+	grid-column: 1/-1;
+}
+.fieldset-card-enter-field--reference .input-group {
+	grid-column: 1/-1;
+}
+.fieldset-card-enter-field .delete-card,
+.fieldset-card-enter-field .save-card {
 	align-self: end;
 }
 .input-group--skill {
 	grid-column: 1/-1;
 }
-.fieldset-card--skill-name,
-.fieldset-card--skill-level {
+.input-group--study-end,
+.input-group--job-end {
+	text-align: end;
+}
+.fieldset-card--output-title,
+.fieldset-card--output-subtitle {
 	text-overflow: ellipsis;
 	overflow: hidden;
 }
-.fieldset-card--skill-name {
+.fieldset-card--output-title {
 	font-weight: bold;
 }
 .fieldset-card:not(:last-of-type) {
@@ -52,7 +77,7 @@
 	.fieldset-card-output .delete-card span {
 		display: inline;
 	}
-	.fieldset-card-enter-field {
+	.fieldset-card-enter-field--skill {
 		grid-template-columns: 1fr 1fr min-content;
 	}
 	.input-group--skill {
@@ -61,7 +86,11 @@
 	.input-group--skill-level {
 		grid-row: 2;
 	}
-	.fieldset-card-enter-field .delete-card {
+	.fieldset-card-enter-field--skill .delete-card {
+		grid-row: 1;
+		grid-column: 3;
+	}
+	.fieldset-card-enter-field--skill .save-card {
 		grid-column: 3;
 	}
 }
@@ -69,8 +98,18 @@
 	.fieldset-card-output {
 		grid-template-columns: 1fr min-content min-content;
 	}
-	.fieldset-card-enter-field {
-		grid-template-columns: 2fr 1fr min-content;
+	.fieldset-card-enter-field--skill {
+		grid-template-columns: 2fr 1fr min-content min-content;
+	}
+	.fieldset-card-enter-field--skill .save-card {
+		grid-row: 1;
+		grid-column: 3;
+	}
+	.fieldset-card-enter-field--skill .delete-card {
+		grid-column: 4;
+	}
+	.fieldset-card-enter-field--reference .delete-card {
+		grid-column: 2;
 	}
 	.input-group--skill {
 		grid-column: 1;
@@ -79,7 +118,11 @@
 		grid-row: 1;
 		grid-column: 2;
 	}
-	.fieldset-card--skill-name {
+	.input-group--study-end,
+	.input-group--job-end {
+		text-align: start;
+	}
+	.fieldset-card--output-title {
 		max-width: 550px;
 	}
 }
