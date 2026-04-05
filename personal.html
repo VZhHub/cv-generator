@@ -13,21 +13,23 @@
 		<meta property="og:image" content="">
 		<meta property="og:url" content="">
 		
-		<title>CVGen - Personal</title>
+		<title>CVgen - Personal</title>
 		
 		<!--<link rel="stylesheet" type="text/css" href="./css/main.css">-->
 		<link rel="stylesheet" type="text/css" href="./css/reset.css">
 		<link rel="stylesheet" type="text/css" href="./css/base.css">
 		<link rel="stylesheet" type="text/css" href="./css/layout.css">
-		<!-- utils suda vstav, ne zabud, a v tablice u overlay uberi display-->
+		<link rel="stylesheet" type="text/css" href="./css/utils.css">
 		<link rel="stylesheet" type="text/css" href="./css/typography.css">
 		<link rel="stylesheet" type="text/css" href="./css/components/form.css">
 		<link rel="stylesheet" type="text/css" href="./css/components/photo-button.css">
 		<link rel="stylesheet" type="text/css" href="./css/components/process-button.css">
 		<link rel="stylesheet" type="text/css" href="./css/components/page-backdrop.css">
 		<link rel="stylesheet" type="text/css" href="./css/components/adjust-photo.css">
-		<link rel="stylesheet" type="text/css" href="./css/utils.css">
+		
+		<script defer src="./js/form-data/restore-form.js"></script>
 		<script type="module" src="./js/photo-editor/index.js"></script>
+		<script defer src="./js/form-data/get-data.js"></script>
 	</head>
 	<body>
 		<div class="page-backdrop"></div>
@@ -46,7 +48,7 @@
 					<p><em>Only fields marked with asterisks are required.</em></p>
 				</hgroup>
 			</header>
-			<form action="" enctype="multipart/form-data">
+			<form action="" enctype="multipart/form-data" data-form="personal" data-next-page="./experience.html">
 				<fieldset class="fieldset fieldset--main">
 					<legend>Main details</legend>
 					<div class="input-group input-group--photo">
@@ -145,10 +147,10 @@
 					</div>
 					<div class="input-group input-group--relocation">
 						<label for="relocation">Open to relocation</label>
-						<input id="relocation" name="relocation" value="yes" type="checkbox">
+						<input id="relocation" name="relocation" value="Yes" type="checkbox">
 					</div>
 				</fieldset>
-				<a class="process-button process-button--next" href="./experience.html">Next Step</a>
+				<button class="process-button process-button--next" type="submit">Next Step</button>
 			</form>
 		</main>
 		<footer id="my-contact" class="page-footer">

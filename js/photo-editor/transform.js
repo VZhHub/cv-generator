@@ -1,5 +1,5 @@
 import {dom} from "./dom.js";
-import {state, coords} from "./state.js";
+import {state} from "./state.js";
 function pointerDown(e) {
 	e.preventDefault();
 	state.startX = e.clientX;
@@ -64,7 +64,6 @@ function rotate() {
 }
 function imgOrientationAndSize() {
 	const iH = dom.img.clientHeight, iW = dom.img.clientWidth;
-	console.log(dom.img.clientHeight, dom.img.clientWidth);
 	state.imgH = iH;
 	state.imgW = iW;
 	state.orientation = iH > iW ? "P" : "A";
@@ -111,4 +110,4 @@ function zoomImg() {
 	if (leftNow < minLeft) dom.img.style.left = minLeft + "px";
 	dom.img.style.transform = `rotate(${state.currentRotation}deg) scale(${state.currentScale})`;
 }
-export {pointerDown, pointerMove, pointerUp, rotate, imgOrientationAndSize, resetImgPos, zoomImg};
+export {pointerDown, pointerUp, rotate, imgOrientationAndSize, resetImgPos, zoomImg};

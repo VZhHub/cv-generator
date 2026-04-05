@@ -51,32 +51,32 @@ const defaultStrings = {
 };
 const addAttributes = {
 	job: (nodes, cardIndex) => {
-		const {jobInput, jobLabel, employerInput, employerLabel, jobStartInput, jobStartLabel, jobEndInput, jobEndLabel, description, descriptionLabel} = nodes;
-		jobInput.id = jobInput.name = jobLabel.htmlFor = "job_" + cardIndex;
-		employerInput.id = employerInput.name = employerLabel.htmlFor = "employer_" + cardIndex;
-		jobStartInput.id = jobStartInput.name = jobStartLabel.htmlFor = "job-start_" + cardIndex;
-		jobEndInput.id = jobEndInput.name = jobEndLabel.htmlFor = "job-end_" + cardIndex;
-		description.id = description.name = descriptionLabel.htmlFor = "job-descr_" + cardIndex;
+		const {jobInput, jobLabel, employerInput, employerLabel, jobStartInput, jobStartLabel, jobEndInput, jobEndLabel, descriptionInput, descriptionLabel} = nodes;
+		jobInput.id = jobLabel.htmlFor = "job_" + cardIndex;
+		employerInput.id = employerLabel.htmlFor = "employer_" + cardIndex;
+		jobStartInput.id = jobStartLabel.htmlFor = "job-start_" + cardIndex;
+		jobEndInput.id = jobEndLabel.htmlFor = "job-end_" + cardIndex;
+		descriptionInput.id = descriptionLabel.htmlFor = "job-descr_" + cardIndex;
 	},
 	education: (nodes, cardIndex) => {
-		const {schoolInput, schoolLabel, degreeInput, degreeLabel, studyStartInput, studyStartLabel, studyEndInput, studyEndLabel, description, descriptionLabel} = nodes;
-		schoolInput.id = schoolInput.name = schoolLabel.htmlFor = "school_" + cardIndex;
-		degreeInput.id = degreeInput.name = degreeLabel.htmlFor = "degree_" + cardIndex;
-		studyStartInput.id = studyStartInput.name = studyStartLabel.htmlFor = "study-start_" + cardIndex;
-		studyEndInput.id = studyEndInput.name = studyEndLabel.htmlFor = "study-end_" + cardIndex;
-		description.id = description.name = descriptionLabel.htmlFor = "edu-descr_" + cardIndex;
+		const {schoolInput, schoolLabel, degreeInput, degreeLabel, studyStartInput, studyStartLabel, studyEndInput, studyEndLabel, descriptionInput, descriptionLabel} = nodes;
+		schoolInput.id = schoolLabel.htmlFor = "school_" + cardIndex;
+		degreeInput.id = degreeLabel.htmlFor = "degree_" + cardIndex;
+		studyStartInput.id = studyStartLabel.htmlFor = "study-start_" + cardIndex;
+		studyEndInput.id = studyEndLabel.htmlFor = "study-end_" + cardIndex;
+		descriptionInput.id = descriptionLabel.htmlFor = "edu-descr_" + cardIndex;
 	},
 	reference: (nodes, cardIndex) => {
 		const {companyInput, companyLabel, personInput, contactPersonLabel, contactTelInput, contactTelLabel, contactEmailInput, contactEmailLabel} = nodes;
-		companyInput.id = companyInput.name = companyLabel.htmlFor = "company-name_" + cardIndex;
-		personInput.id = personInput.name = contactPersonLabel.htmlFor = "contact-person_" + cardIndex;
-		contactTelInput.id = contactTelInput.name = contactTelLabel.htmlFor = "contact-tel_" + cardIndex;
-		contactEmailInput.id = contactEmailInput.name = contactEmailLabel.htmlFor = "contact-email_" + cardIndex;
+		companyInput.id = companyLabel.htmlFor = "company-name_" + cardIndex;
+		personInput.id = contactPersonLabel.htmlFor = "contact-person_" + cardIndex;
+		contactTelInput.id = contactTelLabel.htmlFor = "contact-tel_" + cardIndex;
+		contactEmailInput.id = contactEmailLabel.htmlFor = "contact-email_" + cardIndex;
 	},
 	skill: (nodes, cardIndex) => {
-		const {input, inputLabel, select, selectLabel} = nodes;
-		input.id = input.name = inputLabel.htmlFor = "skill_" + cardIndex;
-		select.id = select.name = selectLabel.htmlFor = "skill-level_" + cardIndex;
+		const {skillInput, skillLabel, selectInput, selectLabel} = nodes;
+		skillInput.id = skillLabel.htmlFor = "skill_" + cardIndex;
+		selectInput.id = selectLabel.htmlFor = "skill-level_" + cardIndex;
 	},
 };
 export {storedCards, params, defaultStrings, addAttributes};

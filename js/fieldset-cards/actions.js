@@ -1,5 +1,13 @@
 import {storedCards, params} from "./state.js";
+import {createCard} from "./creation.js";
 import {hideCard} from "./ui.js";
+function addCard(e) {
+	const button = e.target.closest(".add-card");
+	if (!button) return;
+	const cardType = button.dataset.cardType;
+	const cardId = params.cardIndex[cardType];
+	createCard(cardType, cardId);
+}
 function deleteCard(e) {
 	const button = e.target.closest(".delete-card");
 	if (!button) return;
@@ -26,4 +34,4 @@ function saveCard(e) {
 	const button = e.target.closest(".save-card");
 	if (button) hideCard(button.dataset.cardType);
 }
-export {deleteCard, editCard, saveCard};
+export {addCard, deleteCard, editCard, saveCard};

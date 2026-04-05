@@ -1,7 +1,7 @@
 import {dom} from "./dom.js";
 import {storedCards, params, addAttributes} from "./state.js";
 import {hideCard} from "./ui.js";
-export function createCard(cardType, cardId) {
+function createCard(cardType, cardId) {
 	if (storedCards[cardType].size > 0) hideCard(cardType);
 	const nodes = createNodes(cardType);
 	addAttributes[cardType](nodes, cardId);
@@ -43,3 +43,7 @@ function setCardSizes(cardType, cardId) {
 	params.cardHeight[cardType] = cardHeight;
 	card.style.height = cardHeight + "px";
 }
+function makeBlankCards() {
+	for (const i of ["skill", "job", "education", "reference"]) createCard(i, 0);
+}
+export {createCard, makeBlankCards};
