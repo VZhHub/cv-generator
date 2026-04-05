@@ -45,7 +45,7 @@ function handleImage(e) {
 		ctx.drawImage(bitmap, 0, 0);
 		bitmap.close();
 		const dataURL = canvas.toDataURL("image/jpeg", 0.8);
-		state.imgSrc = dataURL;
+		state.src = dataURL;
 		dom.img.src = dataURL;
 		dom.img.onload = () => {
 			dom.overlay.classList.remove("hidden");
