@@ -44,6 +44,6 @@ function setCardSizes(cardType, cardId) {
 	card.style.height = cardHeight + "px";
 }
 function makeBlankCards() {
-	for (const i of ["skill", "job", "education", "reference"]) createCard(i, 0);
+	for (const i of ["skill", "job", "education", "reference", "interest"]) createCard(i, 0);
 }
 export {createCard, makeBlankCards};

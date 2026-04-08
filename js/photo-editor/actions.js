@@ -23,6 +23,7 @@ function deletePhoto() {
 	state.editorLength = state.labelLength = state.src = null;
 	dom.input.value = null;
 	dom.deletePhoto.classList.add("hidden");
+	sessionStorage.removeItem("uploadedImg");
 }
 function serializeImg(mod) {
 	const obj = {};

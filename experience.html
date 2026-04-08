@@ -235,18 +235,49 @@
 					</template>
 				</fieldset>
 				<fieldset class="fieldset">
-					<legend>Resume objective</legend>
-					<div class="input-group input-group--description">
-						<label for="resume-descr">Description</label>
-						<textarea id="resume-descr" name="resume-descr"></textarea>
-					</div>
-				</fieldset>
-				<fieldset class="fieldset">
 					<legend>Interests</legend>
-					<div class="input-group input-group--description">
-						<label for="hobby-descr">Description</label>
-						<textarea id="hobby-descr" name="hobby-descr"></textarea>
-					</div>
+					<div class="fieldset-cards-wrapper fieldset-cards-wrapper--interest"></div>
+					<button class="add-card" type="button" data-card-type="interest">
+						<svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24" fill="#0f0f0f" xmlns:v="https://vecta.io/nano">
+							<path d="M11 8a1 1 0 1 1 2 0v3h3a1 1 0 1 1 0 2h-3v3a1 1 0 1 1-2 0v-3H8a1 1 0 1 1 0-2h3V8z"/>
+							<path fill-rule="evenodd" d="M23 12c0 6.075-4.925 11-11 11S1 18.075 1 12 5.925 1 12 1s11 4.925 11 11zM3.007 12c0 4.967 4.026 8.993 8.993 8.993s8.993-4.026 8.993-8.993S16.967 3.007 12 3.007 3.007 7.033 3.007 12z"/>
+						</svg>Add another skill
+					</button>
+					<template id="interest-template">
+						<div class="fieldset-card fieldset-card--interests" data-role="card">
+							<div class="fieldset-card-output" data-role="output">
+								<div>
+									<p class="fieldset-card--output-title" data-role="outputTitle">Skill</p>
+								</div>
+								<button class="edit-card" type="button" data-role="editButton">
+									<svg xmlns="http://www.w3.org/2000/svg" fill="#000" width="20" height="20" viewBox="0 0 72 72" xmlns:v="https://vecta.io/nano">
+										<path d="M67.982 14.221c-.148-2.527-1.26-5.003-3.049-6.792l-.436-.435c-1.881-1.882-4.354-2.918-6.961-2.918-2.465 0-4.764.941-6.475 2.652L10.94 46.85c-3.097 3.096-6.277 15.676-6.883 18.166a2 2 0 0 0 .529 1.889l.435.434c.379.381.89.586 1.414.586.143 0 .287-.014.43-.047 2.541-.559 15.373-3.506 18.484-6.617L65.474 21.14c1.776-1.776 2.667-4.233 2.508-6.919zm-18.074 4.762c.195.195.451.293.707.293s.512-.098.707-.293l3.016-3.016 1.896 1.895-34.987 34.987-1.895-1.895 29.076-29.075a1 1 0 0 0-1.414-1.414L17.938 49.54l-2.016-2.017 34.986-34.985 2.016 2.015-3.016 3.016a1 1 0 0 0 0 1.414zM24.675 56.277l-2.015-2.015 34.987-34.986 2.016 2.015-34.988 34.986zM10.28 57.71l4.087 4.088c-1.894.567-3.892 1.106-5.755 1.565a123.02 123.02 0 0 1 1.668-5.653zm6.24 3.413l-5.529-5.53c.991-2.821 1.994-5.133 2.777-5.915l.74-.74 2.722 2.722 6.031 6.032-.74.74c-.779.779-3.128 1.748-6.001 2.691zM62.645 18.31l-1.568 1.568-6.03-6.03-2.724-2.723 1.568-1.568c.955-.955 2.25-1.48 3.646-1.48 1.539 0 3.007.62 4.133 1.746l.435.435a6.55 6.55 0 0 1 1.885 4.199c.089 1.527-.388 2.896-1.345 3.853z"/>
+									</svg><span>Edit</span>
+								</button>
+								<button class="delete-card" type="button">
+									<svg xmlns="http://www.w3.org/2000/svg" fill="#000" width="20" height="20" viewBox="0 0 1000 1000" xmlns:v="https://vecta.io/nano">
+										<path d="M767 336H233q-12 0-21 9t-9 21l38 505q1 13 12 21.5t30 8.5h434q18 0 29-8.5t13-21.5l38-505q0-12-9-21t-21-9zM344 841q-10 0-18-9t-8-21l-26-386q0-12 9-20.5t21-8.5 21 8.5 9 20.5l18 386q0 12-7.5 21t-18.5 9zm182-31q0 13-7.5 22t-18.5 9-18.5-9-7.5-22l-4-385q0-12 9-20.5t21-8.5 21 8.5 9 20.5zm156 1q0 12-8 21t-18 9q-11 0-18.5-9t-7.5-21l18-386q0-12 9-20.5t21-8.5 21 8.5 9 20.5zm101-605l-179-30q-12-2-15-15l-8-33q-4-20-14-26-6-3-22-3h-90q-16 0-23 3-10 6-13 26l-8 33q-2 13-15 15l-179 30q-19 3-31.5 14.5T173 249v28q0 9 6.5 15t15.5 6h610q9 0 15.5-6t6.5-15v-28q0-17-12.5-28.5T783 206z"/>
+									</svg><span>Delete</span>
+								</button>
+							</div>
+							<div class="fieldset-card-enter-field fieldset-card-enter-field--interest" data-role="enterField">
+								<div class="input-group input-group--interest">
+									<label data-role="interestLabel">Hobby</label>
+									<input type="text" data-role="interestInput">
+								</div>
+								<button class="save-card" type="button" data-role="saveButton">
+									<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="#0f0f0f" xmlns:v="https://vecta.io/nano">
+										<path fill-rule="evenodd" d="M18.172 1a2 2 0 0 1 1.414.586l2.828 2.828A2 2 0 0 1 23 5.828V20a3 3 0 0 1-3 3H4a3 3 0 0 1-3-3V4a3 3 0 0 1 3-3h14.172zM4 3a1 1 0 0 0-1 1v16a1 1 0 0 0 1 1h1v-6a3 3 0 0 1 3-3h8a3 3 0 0 1 3 3v6h1a1 1 0 0 0 1-1V6.828a2 2 0 0 0-.586-1.414l-1.828-1.828A2 2 0 0 0 17.172 3H17v2a3 3 0 0 1-3 3h-4a3 3 0 0 1-3-3V3H4zm13 18v-6a1 1 0 0 0-1-1H8a1 1 0 0 0-1 1v6h10zM9 3h6v2a1 1 0 0 1-1 1h-4a1 1 0 0 1-1-1V3z"/>
+									</svg><span>Save</span>
+								</button>
+								<button class="delete-card" type="button">
+									<svg xmlns="http://www.w3.org/2000/svg" fill="#000" width="20" height="20" viewBox="0 0 1000 1000" xmlns:v="https://vecta.io/nano">
+										<path d="M767 336H233q-12 0-21 9t-9 21l38 505q1 13 12 21.5t30 8.5h434q18 0 29-8.5t13-21.5l38-505q0-12-9-21t-21-9zM344 841q-10 0-18-9t-8-21l-26-386q0-12 9-20.5t21-8.5 21 8.5 9 20.5l18 386q0 12-7.5 21t-18.5 9zm182-31q0 13-7.5 22t-18.5 9-18.5-9-7.5-22l-4-385q0-12 9-20.5t21-8.5 21 8.5 9 20.5zm156 1q0 12-8 21t-18 9q-11 0-18.5-9t-7.5-21l18-386q0-12 9-20.5t21-8.5 21 8.5 9 20.5zm101-605l-179-30q-12-2-15-15l-8-33q-4-20-14-26-6-3-22-3h-90q-16 0-23 3-10 6-13 26l-8 33q-2 13-15 15l-179 30q-19 3-31.5 14.5T173 249v28q0 9 6.5 15t15.5 6h610q9 0 15.5-6t6.5-15v-28q0-17-12.5-28.5T783 206z"/>
+									</svg><span>Delete</span>
+								</button>
+							</div>
+						</div>
+					</template>
 				</fieldset>
 				<fieldset class="fieldset fieldset--references">
 					<legend>References</legend>
@@ -305,6 +336,13 @@
 							</div>
 						</div>
 					</template>
+				</fieldset>
+				<fieldset class="fieldset">
+					<legend>Resume objective</legend>
+					<div class="input-group input-group--description">
+						<label for="resume-descr">Description</label>
+						<textarea id="resume-descr" name="resume-descr"></textarea>
+					</div>
 				</fieldset>
 				<a class="process-button process-button--previous" href="./personal.html">Prev Step</a>
 				<button class="process-button process-button--next" type="submit">Next Step</button>

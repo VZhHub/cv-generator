@@ -3,6 +3,7 @@ const storedCards = {
 	reference: new Map(),
 	job: new Map(),
 	education: new Map(),
+	interest: new Map(),
 };
 const params = {
 	cardPadding: 4,
@@ -11,24 +12,28 @@ const params = {
 		reference: 0,
 		job: 0,
 		education: 0,
+		interest: 0,
 	},
 	outputHeight: {
 		skill: 0,
 		reference: 0,
 		job: 0,
 		education: 0,
+		interest: 0,
 	},
 	cardIndex: {
 		skill: 0,
 		reference: 0,
 		job: 0,
 		education: 0,
+		interest: 0,
 	},
 	openingIndex: {
 		skill: 0,
 		reference: 0,
 		job: 0,
 		education: 0,
+		interest: 0,
 	},
 };
 const defaultStrings = {
@@ -47,6 +52,9 @@ const defaultStrings = {
 	education: {
 		0: "School",
 		1: "Degree",
+	},
+	interest: {
+		0: "Hobby",
 	},
 };
 const addAttributes = {
@@ -78,5 +86,9 @@ const addAttributes = {
 		skillInput.id = skillLabel.htmlFor = "skill_" + cardIndex;
 		selectInput.id = selectLabel.htmlFor = "skill-level_" + cardIndex;
 	},
+	interest: (nodes, cardIndex) => {
+		const {interestLabel, interestInput} = nodes;
+		interestInput.id = interestLabel.htmlFor = "interest_" + cardIndex;
+	}
 };
 export {storedCards, params, defaultStrings, addAttributes};

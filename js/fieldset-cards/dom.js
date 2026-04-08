@@ -8,4 +8,6 @@ export const dom = {
 	jobWrapper: document.querySelector(".fieldset-cards-wrapper--work"),
 	educationTemplate: document.getElementById("education-template"),
 	educationWrapper: document.querySelector(".fieldset-cards-wrapper--education"),
+	interestTemplate: document.getElementById("interest-template"),
+	interestWrapper: document.querySelector(".fieldset-cards-wrapper--interest"),
 };
