@@ -8,12 +8,27 @@
 }
 .fieldset-card-output {
 	display: grid;
-	grid-template-columns: minmax(100px, 550px) min-content min-content;
+	grid-template-columns: 1fr min-content min-content;
 	column-gap: 10px;
 	align-items: center;
 	overflow: hidden;
 	opacity: 0;
 	transition: height .3s linear, opacity .3s linear;
+}
+.fieldset-card-enter-field--interest {
+	display: grid;
+	grid-template-columns: auto min-content;
+	gap: 10px;
+}
+.fieldset-card-enter-field--interest .delete-card,
+.fieldset-card-enter-field--interest .save-card {
+	grid-row: 2;
+}
+.fieldset-card:nth-child(1):last-of-type .fieldset-card-output > div {
+	grid-column: 1/3;
+}
+.input-group--interest {
+	grid-column: 1/-1;
 }
 .fieldset-card-enter-field--skill {
 	display: grid;
@@ -77,20 +92,24 @@
 	.fieldset-card-output .delete-card span {
 		display: inline;
 	}
-	.fieldset-card-enter-field--skill {
+	.fieldset-card-enter-field--skill,
+	.fieldset-card-enter-field--interest {
 		grid-template-columns: 1fr 1fr min-content;
 	}
-	.input-group--skill {
+	.input-group--skill,
+	.input-group--interest {
 		grid-column: 1/3;
 	}
 	.input-group--skill-level {
 		grid-row: 2;
 	}
-	.fieldset-card-enter-field--skill .delete-card {
+	.fieldset-card-enter-field--skill .delete-card,
+	.fieldset-card-enter-field--interest .delete-card {
 		grid-row: 1;
 		grid-column: 3;
 	}
-	.fieldset-card-enter-field--skill .save-card {
+	.fieldset-card-enter-field--skill .save-card,
+	.fieldset-card-enter-field--interest .save-card {
 		grid-column: 3;
 	}
 }
@@ -101,11 +120,13 @@
 	.fieldset-card-enter-field--skill {
 		grid-template-columns: 2fr 1fr min-content min-content;
 	}
-	.fieldset-card-enter-field--skill .save-card {
+	.fieldset-card-enter-field--skill .save-card,
+	.fieldset-card-enter-field--interest .save-card {
 		grid-row: 1;
 		grid-column: 3;
 	}
-	.fieldset-card-enter-field--skill .delete-card {
+	.fieldset-card-enter-field--skill .delete-card,
+	.fieldset-card-enter-field--interest .delete-card {
 		grid-column: 4;
 	}
 	.fieldset-card-enter-field--reference .delete-card {

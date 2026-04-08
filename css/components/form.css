@@ -60,12 +60,13 @@ input:not([type="date"]):not([type="checkbox"]) {
 	align-items: center;
 	column-gap: 10px;
 }
-.input-group--target-position {
-	grid-row: 4;
+.input-group--tel {
+	grid-column: 1/-1;
+}
+.input-group--birthday {
+	grid-column: 1;
 }
 .input-group--email,
-.input-group--tel,
-.input-group--target-position,
 .input-group--description,
 .input-group--school,
 .input-group--degree,
@@ -78,12 +79,11 @@ input:not([type="date"]):not([type="checkbox"]) {
 		grid-template-columns: 1fr 1fr;
 	}
 	.input-group--email,
-	.input-group--target-position,
+	.input-group--tel,
 	.input-group--school,
 	.input-group--job-title {
 		grid-column: 1;
 	}
-	.input-group--tel,
 	.input-group--degree,
 	.input-group--employer {
 		grid-column: 2;

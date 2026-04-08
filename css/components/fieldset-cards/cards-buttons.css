@@ -96,8 +96,19 @@
 }
 .fieldset-card--references:nth-child(1):last-of-type .save-card,
 .fieldset-card--education:nth-child(1):last-of-type .save-card,
-.fieldset-card--work:nth-child(1):last-of-type .save-card {
+.fieldset-card--work:nth-child(1):last-of-type .save-card,
+.fieldset-card--interests:nth-child(1):last-of-type .save-card {
 	grid-column: 2;
+}
+.fieldset-card--interests:nth-child(1):last-of-type .edit-card {
+	grid-row: 1;
+	grid-column: 3;
+}
+@media (min-width: 480px) {
+	.fieldset-card--interests:nth-child(1):last-of-type .save-card {
+		grid-row: 1;
+		grid-column: 3;
+	}
 }
 .edit-card:active {
 	border-color: #288921;
