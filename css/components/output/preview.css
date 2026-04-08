@@ -1,0 +1,43 @@
+.cv-preview {
+	justify-self: center;
+	width: 210mm;
+	height: 297mm;
+	margin-bottom: 100px;
+	background-color: #fff;
+	border-radius: 10px;
+	box-shadow: 0px 5px 10px 5px rgba(0, 0, 0, .3);
+	overflow: hidden;
+	z-index:1;
+}
+.personal {
+	height: 100%;
+	width: 35%;
+	padding: 5mm 0 5mm 5mm;
+	background-color: #5e80a2;
+	color: #fff;
+}
+.personal__header {
+	display: grid;
+	justify-items: center;
+}
+.personal__h2 {
+	margin-bottom: 10px;
+}
+.personal__avatar-container {
+	height: 122px;
+	width: 122px;
+	border-radius: 4px;
+	background-color: #fff;
+}
+.personal__h3 {
+	padding-bottom: 5px;
+	margin: 20px 0 15px 0;
+	border-bottom: 2px solid #fff;
+}
+.personal__personal dd {
+	margin-bottom: 15px;
+}
+.cv-preview ~ .process-button--previous {
+	width: min-content;
+	margin-left: calc((100% - 210mm) / 2);
+}

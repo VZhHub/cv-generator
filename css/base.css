@@ -19,3 +19,10 @@ hgroup em {
 button {
 	cursor: pointer;
 }
+dl {
+	overflow-wrap: break-word;
+	word-break: break-word;
+}
+dt {
+	font-weight: bold;
+}
