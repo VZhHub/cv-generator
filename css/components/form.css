@@ -70,7 +70,7 @@ input:not([type="date"]):not([type="checkbox"]) {
 .input-group--description,
 .input-group--school,
 .input-group--degree,
-.input-group--job-title, 
+.input-group--work-title, 
 .input-group--employer {
 	grid-column: 1/-1;
 }
@@ -81,7 +81,7 @@ input:not([type="date"]):not([type="checkbox"]) {
 	.input-group--email,
 	.input-group--tel,
 	.input-group--school,
-	.input-group--job-title {
+	.input-group--work-title {
 		grid-column: 1;
 	}
 	.input-group--degree,

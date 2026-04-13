@@ -1,0 +1,17 @@
+export const dom = {
+	main: document.querySelector(".page-main"),
+	preview: document.querySelector('.cv-preview'),
+	avatar: document.querySelector(".personal__avatar-container"),
+	list: document.querySelector(".interest-list"),
+	personal: document.querySelector(".personal__personal"),
+	education: document.querySelector(".experience__section--education"),
+	educationTemplate: document.getElementById("education-template"),
+	work: document.querySelector(".experience__section--work"),
+	workTemplate: document.getElementById("work-template"),
+	resume: document.querySelector(".experience__section--resume p"),
+	skill: document.querySelector(".experience__section--skills"),
+	skillTemplate: document.getElementById("skills-template"),
+	reference: document.querySelector(".experience__section--references"),
+	referenceTemplate: document.getElementById("references-template"),
+	downloadPdf: document.getElementById("download-pdf"),
+};

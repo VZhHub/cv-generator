@@ -10,7 +10,7 @@ export function hideCard(cardType) {
 	openedCard.card.style.height = params.cardPadding + oH + "px";
 }
 function addDescription(card, cardType) {
-	const {outputTitle, outputSubtitle, skillInput, selectInput, companyInput, personInput, schoolInput, degreeInput, jobInput, employerInput, interestInput} = card;
+	const {outputTitle, outputSubtitle, skillInput, selectInput, companyInput, personInput, schoolInput, degreeInput, workInput, employerInput, interestInput} = card;
 	const insertString = (string1, string2 = false) => {
 		outputTitle.textContent = string1.value || defaultStrings[cardType][0];
 		if (string2) outputSubtitle.textContent = string2.value || defaultStrings[cardType][1];
@@ -22,8 +22,8 @@ function addDescription(card, cardType) {
 		case "reference":
 			insertString(companyInput, personInput);
 			break;
-		case "job":
-			insertString(jobInput, employerInput);
+		case "work":
+			insertString(workInput, employerInput);
 			break;
 		case "education":
 			insertString(schoolInput, degreeInput);

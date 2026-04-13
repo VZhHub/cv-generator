@@ -1,0 +1,59 @@
+.experience {
+	height: 100%;
+	padding: 5mm 5mm 5mm 0;
+	margin-left: 15px;
+}
+.experience__section {
+	border-bottom: 2px solid #bbb;
+}
+.experience h3 {
+	font-weight: lighter;
+	text-transform: uppercase;
+}
+.experience__section:not(:first-of-type) h3 {
+	margin-top: 20px;
+}
+.experience p {
+	font-size: 1rem;
+}
+.experience__section > * {
+	margin-bottom: 10px;
+}
+.experience__article {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-areas:
+		"a b"
+		"a c"
+		"a d";
+}
+.article__p--time,
+.article__h4.article__h4--company {
+	grid-area: a;
+	font-weight: normal;
+}
+.article__h4,
+.article__p--person {
+	grid-area: b;
+	font-weight: bold;
+}
+.article__p--degree,
+.article__p--company,
+.article__p--tel {
+	grid-area: c;
+}
+.article__p--description,
+.article__p--email {
+	grid-area: d;
+}
+.experience__dl {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 5px;
+}
+.experience__dt {
+	font-weight: normal;
+}
+.experience__dd {
+	font-weight: bold;
+}

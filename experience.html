@@ -43,10 +43,10 @@
 		</header>
 		<main class="page-main">
 			<header class="main-header">
-				<hgroup class="main-header__hgroup">
+				<div class="main-header__hgroup">
 					<h1>My experiences</h1>
 					<p><em>This section is optional but highly recommended.</em></p>
-				</hgroup>
+				</div>
 			</header>
 			<form action="" data-form="experience" data-next-page="./output.html">
 				<fieldset class="fieldset fieldset--education">
@@ -173,7 +173,7 @@
 				<fieldset class="fieldset fieldset--work">
 					<legend>Work experience</legend>
 					<div class="fieldset-cards-wrapper fieldset-cards-wrapper--work"></div>
-					<button class="add-card" type="button" data-card-type="job">
+					<button class="add-card" type="button" data-card-type="work">
 						<svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24" fill="#0f0f0f" xmlns:v="https://vecta.io/nano">
 							<path d="M11 8a1 1 0 1 1 2 0v3h3a1 1 0 1 1 0 2h-3v3a1 1 0 1 1-2 0v-3H8a1 1 0 1 1 0-2h3V8z"/>
 							<path fill-rule="evenodd" d="M23 12c0 6.075-4.925 11-11 11S1 18.075 1 12 5.925 1 12 1s11 4.925 11 11zM3.007 12c0 4.967 4.026 8.993 8.993 8.993s8.993-4.026 8.993-8.993S16.967 3.007 12 3.007 3.007 7.033 3.007 12z"/>
@@ -183,7 +183,7 @@
 						<div class="fieldset-card fieldset-card--work" data-role="card">
 							<div class="fieldset-card-output" data-role="output">
 								<div>
-									<p class="fieldset-card--output-title" data-role="outputTitle">Job Title</p>
+									<p class="fieldset-card--output-title" data-role="outputTitle">Work Title</p>
 									<p class="fieldset-card--output-subtitle" data-role="outputSubtitle">Employer</p>
 								</div>
 								<button class="edit-card" type="button" data-role="editButton">
@@ -198,21 +198,21 @@
 								</button>
 							</div>
 							<div class="fieldset-card-enter-field fieldset-card-enter-field--work" data-role="enterField">
-								<div class="input-group input-group--job-title">
-									<label data-role="jobLabel">Job Title</label>
-									<input type="text" data-role="jobInput">
+								<div class="input-group input-group--work-title">
+									<label data-role="workLabel">Work Title</label>
+									<input type="text" data-role="workInput">
 								</div>
 								<div class="input-group input-group--employer">
 									<label data-role="employerLabel">Employer</label>
 									<input type="text" data-role="employerInput">
 								</div>
 								<div class="input-group">
-									<label data-role="jobStartLabel">Start date</label>
-									<input type="date" data-role="jobStartInput">
+									<label data-role="workStartLabel">Start date</label>
+									<input type="date" data-role="workStartInput">
 								</div>
-								<div class="input-group input-group--job-end">
-									<label data-role="jobEndLabel">End date</label>
-									<input type="date" data-role="jobEndInput">
+								<div class="input-group input-group--work-end">
+									<label data-role="workEndLabel">End date</label>
+									<input type="date" data-role="workEndInput">
 								</div>
 								<div class="input-group input-group--description">
 									<label data-role="descriptionLabel">Description</label>

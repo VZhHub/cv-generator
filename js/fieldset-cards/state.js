@@ -1,7 +1,7 @@
 const storedCards = {
 	skill: new Map(),
 	reference: new Map(),
-	job: new Map(),
+	work: new Map(),
 	education: new Map(),
 	interest: new Map(),
 };
@@ -10,35 +10,35 @@ const params = {
 	cardHeight: {
 		skill: 0,
 		reference: 0,
-		job: 0,
+		work: 0,
 		education: 0,
 		interest: 0,
 	},
 	outputHeight: {
 		skill: 0,
 		reference: 0,
-		job: 0,
+		work: 0,
 		education: 0,
 		interest: 0,
 	},
 	cardIndex: {
 		skill: 0,
 		reference: 0,
-		job: 0,
+		work: 0,
 		education: 0,
 		interest: 0,
 	},
 	openingIndex: {
 		skill: 0,
 		reference: 0,
-		job: 0,
+		work: 0,
 		education: 0,
 		interest: 0,
 	},
 };
 const defaultStrings = {
-	job: {
-		0: "Job Title",
+	work: {
+		0: "Work Title",
 		1: "Employer",
 	},
 	skill: {
@@ -58,13 +58,13 @@ const defaultStrings = {
 	},
 };
 const addAttributes = {
-	job: (nodes, cardIndex) => {
-		const {jobInput, jobLabel, employerInput, employerLabel, jobStartInput, jobStartLabel, jobEndInput, jobEndLabel, descriptionInput, descriptionLabel} = nodes;
-		jobInput.id = jobLabel.htmlFor = "job_" + cardIndex;
+	work: (nodes, cardIndex) => {
+		const {workInput, workLabel, employerInput, employerLabel, workStartInput, workStartLabel, workEndInput, workEndLabel, descriptionInput, descriptionLabel} = nodes;
+		workInput.id = workLabel.htmlFor = "work_" + cardIndex;
 		employerInput.id = employerLabel.htmlFor = "employer_" + cardIndex;
-		jobStartInput.id = jobStartLabel.htmlFor = "job-start_" + cardIndex;
-		jobEndInput.id = jobEndLabel.htmlFor = "job-end_" + cardIndex;
-		descriptionInput.id = descriptionLabel.htmlFor = "job-descr_" + cardIndex;
+		workStartInput.id = workStartLabel.htmlFor = "work-start_" + cardIndex;
+		workEndInput.id = workEndLabel.htmlFor = "work-end_" + cardIndex;
+		descriptionInput.id = descriptionLabel.htmlFor = "work-descr_" + cardIndex;
 	},
 	education: (nodes, cardIndex) => {
 		const {schoolInput, schoolLabel, degreeInput, degreeLabel, studyStartInput, studyStartLabel, studyEndInput, studyEndLabel, descriptionInput, descriptionLabel} = nodes;

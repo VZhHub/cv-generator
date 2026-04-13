@@ -1,0 +1,41 @@
+.personal {
+	height: 100%;
+	padding: 5mm 0 5mm 5mm;
+	background-color: #5e80a2;
+	color: #fff;
+}
+.personal__header {
+	display: grid;
+	justify-items: center;
+}
+.personal__h2 {
+	margin-bottom: 10px;
+	font-size: 1.3rem;
+	text-align: center;
+	letter-spacing: 1px;
+}
+.personal__avatar-container {
+	display: flex;
+	align-items: center;
+	height: 122px;
+	width: 122px;
+	border-radius: 4px;
+	background-color: #fff;
+	overflow: hidden;
+}
+.personal__avatar-container img {
+	position: relative;
+}
+.personal__h3 {
+	padding-bottom: 5px;
+	margin: 20px 0 15px 0;
+	border-bottom: 2px solid #fff;
+}
+.personal__h2,
+.personal__personal dl,
+.interest-list {
+	padding-right: 5px;
+}
+.personal__personal dd {
+	margin-bottom: 15px;
+}

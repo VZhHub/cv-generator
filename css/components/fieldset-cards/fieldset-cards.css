@@ -69,7 +69,7 @@
 	grid-column: 1/-1;
 }
 .input-group--study-end,
-.input-group--job-end {
+.input-group--work-end {
 	text-align: end;
 }
 .fieldset-card--output-title,
@@ -140,7 +140,7 @@
 		grid-column: 2;
 	}
 	.input-group--study-end,
-	.input-group--job-end {
+	.input-group--work-end {
 		text-align: start;
 	}
 	.fieldset-card--output-title {

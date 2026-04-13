@@ -4,7 +4,7 @@ const dom = {
 dom.form.addEventListener("submit", goNext);
 function getFormData(formName) {
 	const formData = new FormData(dom.form);
-	if (formName === "personal" && !formData.has("relocation")) formData.set("relocation", "No");
+	if (formName === "personal" && !formData.has("relocation")) formData.set("relocation", "");
 	return formData;
 }
 function setSessionStorage(formName) {
