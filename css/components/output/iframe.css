@@ -1,0 +1,12 @@
+iframe {
+	position: fixed;
+	right: 0;
+	height: 297mm;
+	width: 210mm;
+	opacity: 0;
+	-moz-user-select: all;
+	-webkit-user-select: all;
+	-ms-user-select: all;
+	user-select: none;
+	pointer-events: none;
+}
