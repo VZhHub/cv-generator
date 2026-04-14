@@ -3,9 +3,9 @@ h1 {
 }
 @media (min-width: 768px) {
 	h1 {
-		font-size: 3rem;
+		//font-size: 3rem;
 	}
 	p {
-		font-size: 1.1rem;
+		//font-size: 1.1rem;
 	}
 }

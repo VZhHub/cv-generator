@@ -13,9 +13,6 @@
 .experience__section:not(:first-of-type) h3 {
 	margin-top: 20px;
 }
-.experience p {
-	font-size: 1rem;
-}
 .experience__section > * {
 	margin-bottom: 10px;
 }
