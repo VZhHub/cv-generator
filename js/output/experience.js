@@ -66,7 +66,7 @@ function addSkills(data, key) {
 	for (const obj of data[key]) {
 		if (!obj[mainField]) continue;
 		formIsFilled = true;
-		const node = dom.skillsTemplate.content.cloneNode(true);
+		const node = dom[`${key}Template`].content.cloneNode(true);
 		node.querySelector("dt").textContent = obj.skillInput;
 		node.querySelector("dd").textContent = obj.selectInput || "--";
 		dl.appendChild(node);
