@@ -1,0 +1,1 @@
+import{i as e}from"./state-Bw8p_Rfn.js";function t(){let t={};for(let[n,r]of Object.entries(e)){t[n]=[];for(let e of r.values()){let r={};for(let[t,n]of Object.entries(e))t.includes(`Input`)&&(r[t]=n.value);t[n].push(r)}}let n=JSON.stringify(t);sessionStorage.setItem(`cards`,n)}export{t as serializeCards};
