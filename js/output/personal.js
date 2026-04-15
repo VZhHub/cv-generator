@@ -2,6 +2,7 @@ import {dom} from "./dom.js";
 setPeronalInfo();
 function setPersonalObject() {
 	const data = getPersonalData();
+	setName(data);
 	return ({
 		Email: data.email,
 		"Phone number": data.tel,
@@ -35,4 +36,7 @@ function setAddress(data) {
 	const arr = [data.state, data.city, data.street, data.zip].filter(Boolean);
 	if (!arr.length) return "";
 	return arr.join(", ");
+}
+function setName(data) {
+	dom.name.textContent = `${data.fname} ${data.lname}`;
 }

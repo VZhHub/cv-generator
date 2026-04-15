@@ -1,4 +1,5 @@
 export const dom = {
+	name:document.querySelector(".personal__h2"),
 	main: document.querySelector(".page-main"),
 	preview: document.querySelector('.cv-preview'),
 	avatar: document.querySelector(".personal__avatar-container"),
