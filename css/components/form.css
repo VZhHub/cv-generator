@@ -45,7 +45,6 @@ input:not([type="checkbox"]),
 select {
 	padding: 5px;
 	margin-top: 5px;
-	//max-width: 550px;
 	font-size: 1.1rem;
 }
 input:not([type="date"]):not([type="checkbox"]) {
