@@ -2,6 +2,7 @@ import {dirname, resolve} from "node:path";
 import {defineConfig} from "vite";
 
 export default defineConfig({
+	base: "/cv-generator/",
 	build: {
 		rolldownOptions: {
 			input: {
@@ -12,4 +13,4 @@ export default defineConfig({
 			},
 		},
 	},
-})
+});
