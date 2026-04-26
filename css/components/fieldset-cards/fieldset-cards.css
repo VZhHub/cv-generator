@@ -70,7 +70,7 @@
 }
 .input-group--study-end,
 .input-group--work-end {
-	text-align: end;
+	grid-column: 1;
 }
 .fieldset-card--output-title,
 .fieldset-card--output-subtitle {
@@ -102,6 +102,11 @@
 	}
 	.input-group--skill-level {
 		grid-row: 2;
+	}
+	.input-group--study-end,
+	.input-group--work-end {
+		text-align: end;
+		grid-column: 2;
 	}
 	.fieldset-card-enter-field--skill .delete-card,
 	.fieldset-card-enter-field--interest .delete-card {
